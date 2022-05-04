@@ -6,25 +6,25 @@
 body {                                                          /*Бадя*/
 	text-align: center;
 	padding: 10px;
-    background: url(img/fon1.jpg) center no-repeat;
+    	background: url(img/fon1.jpg) center no-repeat;
 }
 
 
 .container {                                                    /*контейнер*/
-    width: 100%;
-    height: 90vh;
+    	width: 100%;
+    	height: 90vh;
     
     
 }
 h1 {                                                            /*заголовок*/
-    color: #38b0f5;
-    font-family: 'Koulen', cursive;
-    letter-spacing: 7px;
-    margin-left: 12px;
+    	color: #38b0f5;
+    	font-family: 'Koulen', cursive;
+    	letter-spacing: 7px;
+    	margin-left: 12px;
 }
 
 .form {                                                         /*форма в которой все находится*/
-	   width: 360px;
+       width: 360px;
        height: 325px;
        position: absolute;
        top: 50%;
@@ -41,32 +41,32 @@ h1 {                                                            /*заголов
 }
 
 .form__field {
-	   margin-bottom: 10px;
+       margin-bottom: 10px;
 }
 
 .form__error {                                                  /*предупреждение об ошибке*/
-	  color: red;
-	  text-align: left;
-	  font-size: 15px;
-	  display: block;
-	  margin-top: 3px;
-	  display: none;
-      padding: 0 0 0 20px;
+	color: red;
+	text-align: left;
+	font-size: 15px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+        padding: 0 0 0 20px;
 }
 
 .form input {                                                   /*Кнопочки*/
-       width: 50%;
-       background-color: rgba(0, 0, 0, 0.384);
-       display: block;
-       margin: 20px auto;
-       padding: 10px;
-       text-align: center;
-       border: 3px solid rgb(159, 133, 160);
-       outline: none;
-       color: rgb(230, 230, 230);
-       transition: 0.25s;
-       border-radius: 10px;
-       transition: 0.40s;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.384);
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+        border: 3px solid rgb(159, 133, 160);
+        outline: none;
+        color: rgb(230, 230, 230);
+        transition: 0.25s;
+        border-radius: 10px;
+        transition: 0.40s;
     
 }
 .form input:focus {
@@ -90,12 +90,12 @@ h1 {                                                            /*заголов
 
 
 input:valid:not(:placeholder-shown) {                           /*инпут при положительной валидации*/
-	   border-color: #0a9ef3;
+       border-color: #0a9ef3;
 }
 
 input:invalid:not(:placeholder-shown) {                         /*инпут при отрицательной валидации*/
-	border-color: red;
+       border-color: red;
 }
 input:invalid:not(:placeholder-shown) + .form__error {          /*высвечивание окна с предупреждением*/
-	display: block;
+       display: block;
 }
