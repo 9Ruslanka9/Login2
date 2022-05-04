@@ -17,12 +17,15 @@ body {                                                          /*Бадя*/
     
 }
 h1 {                                                            /*заголовок*/
-    color: aqua;
+    color: #38b0f5;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 7px;
+    margin-left: 12px;
 }
 
 .form {                                                         /*форма в которой все находится*/
 	   width: 360px;
-       height: 300px;
+       height: 325px;
        position: absolute;
        top: 50%;
        left: 50%;
@@ -33,7 +36,8 @@ h1 {                                                            /*заголов
        background-position: center;
        text-align: center;
        border-radius: 25px;
-       background-color: rgba(0, 0, 0, 0.671);
+       background-color: rgba(0, 0, 0, 0.418);
+       box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .form__field {
@@ -52,22 +56,32 @@ h1 {                                                            /*заголов
 
 .form input {                                                   /*Кнопочки*/
        width: 50%;
-       background: none;
+       background-color: rgba(0, 0, 0, 0.384);
        display: block;
        margin: 20px auto;
        padding: 10px;
        text-align: center;
-       border: 3px solid #18868a9c;
+       border: 3px solid rgb(159, 133, 160);
        outline: none;
        color: rgb(230, 230, 230);
        transition: 0.25s;
        border-radius: 10px;
+       transition: 0.40s;
     
+}
+.form input:focus {
+       border: 3px solid #da7619;                             /*Эффекты при нажатии*/
 }
 
 
-.supmit {
-    color: #000000;
+.supmit {                                                       /*отдельно кнопка отправить*/
+       
+       cursor: pointer;
+       border: rgb(159, 159, 160);
+}
+.supmit:hover {                                                /*Эффекты для кнопки отправить*/
+       border: 3px solid #8a18189c;
+       background-color: #15ff6f25;
 }
 
 ::-webkit-input-placeholder {color:#ffffff;}                  /*изменение цвета емейла и пароля*/
@@ -76,8 +90,7 @@ h1 {                                                            /*заголов
 
 
 input:valid:not(:placeholder-shown) {                           /*инпут при положительной валидации*/
-	border-color: #0be881;
-    
+	   border-color: #0a9ef3;
 }
 
 input:invalid:not(:placeholder-shown) {                         /*инпут при отрицательной валидации*/
